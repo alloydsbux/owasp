@@ -31,7 +31,8 @@
                   "severity": "High",
                   "type": "Spoofing",
                   "title": "Spoofing as a different host",
-                  "description": "This could cause one host to have remediation commands sent to another host"
+                  "description": "This could cause one host to have remediation commands sent to another host",
+                  "mitigation": "Issue each managed host a certificate such that identity is unique. Attempts to spoof would fail because the attempted target would not sign the data and/or identity of the compromised agent."
                 }
               ],
               "attrs": {
